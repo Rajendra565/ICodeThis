@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.plan-btn{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.plan-btn::before{
+    content: '';
+        width: 10%;
+        height: 100%;
+        background-color: #ffa3ff4e;
+        position: absolute;
+        top: 0;
+        left: -90%;
+        border-radius: 10px;
+        /* transform: rotate(30deg); */
+        box-shadow: 20px 20px 50px #fcbedd ,-20px -20px 50px #373436 ;
+        z-index: -1;
+        transition: all 2s ease;
+}
+.plan-btn:hover::before{
+    left:90%;
+}
+.invoices{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.invoices::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fcfbfb4e;
+    position: absolute;
+    top: -90%;
+    left: 0;
+    border-radius: 10px;
+    z-index: -1;
+    transition:all 2s ease ;
+}
+
+.invoices:hover::before{
+    /* background-color: #151515; */
+    /* width: 100%; */
+    /* height: 100%; */
+    top: 90%;
+    background: #EC4899;
+}
+.history ul .list{
+    padding: 2px 2px;
+    transition: all 1.2s ease;
+}
+
+.history ul .list .PDF{
+    display: none;
+    transition: all 2s ease;
+}
+
+.history ul .list:hover .PDF{
+    display: block;
+    color: Red;
+}
+.history ul .list:hover{
+    background-color: #052758;
+}

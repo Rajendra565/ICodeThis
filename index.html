@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Billing Cards</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <div class=" text-[#181028] p-8 space-y-4 shadow-lg rounded-xl w-96 bg-pink-40 bg-pink-500 relative h-60">
+       
+            <div class="plan absolute -top-32 -left-32  bg-slate-700 w-fit p-6 flex flex-col rounded-lg gap-5 text-[#fff]">
+
+                <b class=" font-bold">Your plan</b>
+                <span class=" text-3xl capitalize ">Professional</span>
+                <div class="btn flex gap-4 items-center ">
+                    <button class="plan-btn bg-pink-500 p-2 rounded-xl">Upgrade plan</button>
+                    <a href="#" class=" underline text-blue-500 capitalize">cancel plan</a>
+                </div>
+
+            </div>
+            <div class="history w-96 absolute top-16 left-20 rounded-xl bg-slate-700 absolute flex flex-col gap-7 p-5 text-[#fff]  items-start">
+                <b class=" text-3xl ">Invoice history</b>
+                <ul class=" flex flex-col gap-3">
+                    <li class="list flex gap-20">
+                        <div class="date flex gap-3">
+                        <span>June26,2021</span>
+                        <span>$25.30</span>
+                        </div>
+                        <span class="PDF ">Download PDF</span>
+
+                    </li>
+
+                    <li class="list flex gap-20 ">
+                        <div class="date flex gap-3 ">
+                            <span>June26,2021</span>
+                            <span>$25.30</span>
+                        </div>
+                        <span class="PDF ">Download PDF</span>
+                    
+                    </li>
+                    <li class="list flex gap-20 ">
+                        <div class="date flex gap-3 ">
+                            <span>June26,2021</span>
+                            <span>$25.30</span>
+                        </div>
+                        <span class="PDF ">Download PDF</span>
+                    
+                    </li>
+                    <li class="list flex gap-20 ">
+                        <div class="date flex gap-3 ">
+                            <span>June26,2021</span>
+                            <span>$25.30</span>
+                        </div>
+                        <span class="PDF ">Download PDF</span>
+                    
+                    </li>
+                    
+                </ul>
+                <button class="invoices border-2 border-gray-400 p-2 rounded-xl capitalize ">Show all invoices</button>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
