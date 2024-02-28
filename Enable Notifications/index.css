@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Add CSS here */
+.Top{
+    /* display: none; */
+}
+.xicon,.xicon-two{
+    rotate: 45deg;
+    cursor: pointer;
+}
+button{
+    transition: all 1.2s ease;
+}
+button:hover{
+    letter-spacing: 1px;
+}
+.bottom{
+    box-shadow: 3px 10px 10px #414141;
+
+}
