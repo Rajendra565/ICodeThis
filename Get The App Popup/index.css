@@ -1,0 +1,73 @@
+body{
+    overflow: hidden;
+}
+.hero{
+       /* background: #e0e0e0; */
+        box-shadow: -10px -10px 30px #74ccf4,
+            5px 5px 30px #2da0d6;
+            z-index:100;
+           
+}
+
+.Link .icon{
+    width: 40px;
+}
+.app-inner{
+    position: relative;
+    z-index: 1;
+    color: #000;
+}
+.app-inner::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: rgba(214, 214, 214, 0.237);
+    position: absolute;
+    top: 0;
+    left: 0%;
+    border-radius: 10px;
+    z-index: -1;
+    transition: all 1.2s ease;
+}
+.Apps-items:hover .app-inner::before{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+.hero span{
+    position: absolute;
+    bottom: -50px ;
+    background: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: animate 5s linear infinite;
+    z-index: -10;
+}
+.hero span::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.25) translate(-70%,-70%);
+    background: radial-gradient(#fff,transparent);
+    border-radius: 50%;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-1200%);
+        opacity: 1;
+    }
+    
+}
+
+
+
