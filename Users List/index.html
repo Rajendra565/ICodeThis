@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+    <script src="https://kit.fontawesome.com/5fd4d98e50.js" crossorigin="anonymous"></script>
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+    <body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <div class="main bg-white text-[#181028] p-6 space-y-4 shadow-lg rounded-xl">
+        <div class="inner flex flex-col gap-4 items-start ">
+            <b class=" text-xl"> User</b>
+            <div class="navbar flex gap-6 relative justify-between w-full  items-center">
+                <div class="search relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-2 top-4"></i>
+                    <input type="text " placeholder=" search Users" class=" border-2 p-2 rounded-lg pl-5">
+                </div>
+                <div class="links  ">
+                    <ul class="links-ul gap-4 capitalize">
+                        <li>reputation</li>
+                        <li>New Users</li>
+                        <li class=" active">Voters</li>
+                        <li>Editor </li>
+                        <li>Moderators</li>
+                    </ul>
+                </div>
+
+                <div class="bars p-2 px-3 ">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+            </div>
+
+            <div class="hero flex gap-2 my-4 w-full">
+                
+               
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

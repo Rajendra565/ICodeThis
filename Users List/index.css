@@ -1,0 +1,99 @@
+.main{
+    width: 65%;
+}
+
+
+
+.links ul li{
+    padding: 5px;
+    /* background: #000; */
+    width: 120px;
+    text-align: center;
+}
+
+.links ul li:hover{
+background: rgb(177, 177, 251);
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.links .links-ul{
+display: flex;
+/* gap: 100px; */
+}
+.bars{
+    display: none;
+    box-shadow: 2px 2px 20px #414141;
+    border-radius: 50%;
+
+}
+.card{
+    padding: 20px 5px;
+    width: 30vw;
+}
+
+.details{
+    width: 100%;
+}
+.image img{
+    scale: 0.8;
+}
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero .card{
+    width: fit-content;
+}
+.btn button{
+    background: #c4dfff;
+    padding: 3px ;
+    border-radius: 20px;
+    color: #fff;
+}
+.hero .card{
+    box-shadow: 2px 2px 20px #4141414d;
+    /* padding: 4px; */
+    border-radius: 10px;
+}
+.active{
+    background: rgb(177, 177, 251);
+    border-radius: 20px;
+    
+}
+
+
+
+@media  (max-width: 768px){
+    .main{
+        width: 70%;
+        /* z-index: -1; */
+    }
+    .links .links-ul{
+        display: block;
+    }
+    .bars{
+        display: block;
+    }
+    .hero{
+        width: 100%;
+        z-index: 1;
+    }
+
+   .links {
+    background: #fffbfbe8;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    display: none;
+    z-index:12 ;
+    
+   
+   }
+   .links-active{
+    display: block;
+    padding: 30px;
+    top: 50px;
+    width: 100%;    
+   }
+}

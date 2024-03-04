@@ -34,6 +34,13 @@ body{
     height: 100%;
     
 }
+.Apps-items .icon i{
+    transition: all 1.2s ease;
+}
+.Apps-items:hover.Apps-items .icon i{
+    transform: scale(1.1);
+    rotate: 120px;
+}
 
 
 
