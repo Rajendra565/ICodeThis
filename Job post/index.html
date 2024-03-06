@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Post</title>
+        <!-- Remove the line below if you don't want to use TailwindCSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/5fd4d98e50.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class=" flex justify-center items-center min-h-screen">
+    <div class="bg-white text-[#181028] p-8 space-y-4 shadow-lg rounded-xl max-w-xl flex flex-col gap-4 relative">
+       <div class="menu">
+           <i class="fa-solid fa-ellipsis absolute top-20 right-10 "></i>
+       </div>
+       <div class="top flex items-start justify-start ">
+           <div class="image">
+               <img class=" w-24 h-24 rounded-full" src="https://cdn.pixabay.com/photo/2012/06/19/10/32/owl-50267_1280.jpg" alt="image">
+           </div>
+           <div class="text flex flex-col gap-1 mx-3 ">
+               <b>Product Designer at wisely</b>
+               <span class=" flex gap-1 items-center"><i class=" text-[#b3b2b2] fa-solid fa-location-dot"></i><span>Austin, TX or Remote</span></span>
+               <div class="btn">
+                   <button class="prime-btn w-16 p-1 ">Save</button>
+                   <button class="sec-btn w-16 p-1">Apply</button>
+               </div>
+           </div>
+       </div>
+       <div class="buttom flex w-full justify-between gap-7 bg-slate-100 p-2 px-6">
+           <div class="job">
+               <span class=" capitalize font-light">JOB</span>
+               <ul>
+                   <li>7/9 skills match</li>
+                   <li>32 applicants</li>
+               </ul>
+           </div>
+           <div class="company">
+               <span class=" capitalize font-light">Company</span>
+               <ul>
+                   <li>51-200 employees</li>
+                   <li>Computer Softwear</li>
+               </ul>
+           </div>
+           <div class="connections w-40  flex flex-col">
+               <span class=" capitalize font-light">connections</span>
+               <span>you don't have connections working at wisely</span>
+           </div>
+       </div>
+       <button class="view-btn ">View Job Post</button>
+    </div>
+</body>
+</html>

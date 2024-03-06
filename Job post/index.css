@@ -1,0 +1,90 @@
+/* Add CSS here */
+body{
+    
+    background:  conic-gradient(from 45deg at 50% 50%, oklch(35% 0.09 246) 0% 50%, #FEE4EA 0% 100%);;
+}
+
+ul li{
+    list-style: disc;
+}
+
+.view-btn{
+    transition: all 1.2s ease;
+    font-weight: 700;
+    font-size: 20px;
+}
+.view-btn:hover{
+    letter-spacing: 1px;
+}
+.btn{
+    margin-top: 2rem;
+}
+.prime-btn{
+
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    transition: all 1.2s ease;
+
+}
+.prime-btn:hover{
+color: #fff;
+}
+.sec-btn{
+    background: rgb(0, 0, 82);
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 10;
+    transition:all 1.2s ease;
+    overflow: hidden;
+    
+
+}
+.sec-btn:hover{
+    color: #000;
+    /* border: none; */
+}
+
+.btn button{
+position: relative;
+border: 1px solid #000;
+border-radius: 10px;
+font-weight: 500;
+}
+.prime-btn::before{
+    content: '';
+    width: 100%;
+    height: 0%;
+    background: rgb(0, 0, 82);
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    border-radius: px;
+    z-index: -1;
+    transition: all 1.2s ease;
+}
+.prime-btn:hover::before{
+    width: 100%;
+    height: 100%;
+   
+}
+.sec-btn::before{
+    content: '';
+    width: 100%;
+    height: 0%;  
+    background: #ffffff;
+    position: absolute;
+    bottom: -90%;
+    right: 0;
+    border-radius: px;
+    z-index: -1;
+    transition: all 1.2s ease;
+   
+}
+.sec-btn:hover::before{
+    width: 100%;
+     height:100%;
+     bottom: 0;
+}
+
