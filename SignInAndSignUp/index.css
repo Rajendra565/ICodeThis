@@ -1,0 +1,96 @@
+body{
+    background-image: url('https://i.pinimg.com/originals/f7/6b/78/f76b78ccb921f24e05a0307fef358c2a.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    border-radius: 50px;
+        background:#00000086;
+        box-shadow: 5px 5px 50px #4f4d4d4a,
+            -5px -5px 60px #ffffff3c;
+}
+.orange-btn{
+    background: orange;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 1.2s ease;
+
+}
+.orange-btn:hover{
+    background: rgb(255, 196, 86);
+   
+
+}
+.bule-btn{
+    background: rgb(68, 95, 247);
+    color: #fff;
+    font-weight:600;
+    border-radius: 10px;
+    transition: all 1.2s ease;
+
+}
+.bule-btn:hover{
+    background: rgb(135, 153, 255);
+ 
+
+}
+.Name input,.mail input ,.password input{
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(50, 177, 205);
+    width: 100%;
+
+}
+
+input[type="checkbox"]{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    /* color: green; */
+    border-radius: .25rem;
+    appearance: none;
+    background-color: #bdb9b9;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked {
+    background: rgb(50, 177, 205);
+    /* border: 2px solid #fff; */
+}
+input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 10px;
+        width: 9px;
+        height: 17px;
+    border: 4px solid transparent;
+    border-left: none;
+    border-top: none;
+    /* background: #fff; */
+    transform: rotate(45deg) scale(1);
+}
+input[type="checkbox"]:checked:before{
+    border-color: #fff;
+}
+
+.Name input{
+
+}
+
+.active{
+    background:#fff;
+    padding: 0.75rem;
+    width: 120px;
+    color: #16c3cf;
+    border-radius: 30px;
+}
+
+.signin{
+    display: flex;
+    
+}
+.signup{
+    display:none;
+}
