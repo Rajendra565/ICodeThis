@@ -1,0 +1,111 @@
+/* Add CSS here */
+
+
+i{
+    cursor: pointer;
+}
+
+.frist-btn {
+    border: 2px solid rgb(74, 255, 252);
+}
+.sec-btn{
+    background: rgb(19, 93, 149);
+}
+
+.rate {
+    position: relative;
+}
+
+#r1 {
+    --rating-img: url(https://cdn.pixabay.com/photo/2022/12/11/04/11/thumbs-up-7648171_1280.png);
+}
+
+#r2 {
+    --rating-img: url(https://p1.hiclipart.com/preview/841/78/529/emoji-sticker-smiling-emoji-png-clipart.jpg);
+}
+
+#r3 {
+
+    --rating-img: url(https://www.blackwolf.me.uk/public/icodethis/rate1.png);
+}
+
+#r4 {
+    --rating-img: url(https://www.blackwolf.me.uk/public/icodethis/rate1.png);
+}
+#r5 {
+    --rating-img: url(https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-happy-emoji-emoticon-showing-double-thumbs-up-like-png-image_4708251.png);
+}
+
+
+input[type=radio] {
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-image: var(--rating-img);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* outline: solid 2px #000; */
+    outline-offset: 3px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 333ms ease;
+}
+input[type=radio]:hover{
+    scale: 1.1;
+}
+
+input[type="radio"i] {
+    background-color: initial;
+    /* cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial; */
+    border: initial;
+}
+
+input[type=radio]::after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px rgb(74, 255, 252);
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px 3px #3a3a3b96;
+    display: none;
+    transition: width 333ms ease, height 333ms ease;
+}
+input[type=radio]:checked::after {
+    width: calc(48px* 1.25);                                                                           
+    height: calc(48px* 1.25);
+    display: block;
+}
+
+
+
+.icon{
+    position: relative;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-Div{
+    display: flex;
+}
+.rejoin-Div{
+    display: none;
+}
+.home{
+    display: none;
+}
+
+
