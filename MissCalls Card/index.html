@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missed Call Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5fd4d98e50.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <div class="card bg-white text-[#181028] p-8 space-y-4 shadow-lg rounded-xl ">
+        <div class="inner-card flex flex-col gap-5 relative ">
+            <div class="x-icon p-1 bg-slate-200 absolute cursor-pointer top-0 right-0 w-fit px-2 rounded-full hover:bg-slate-300 text-[#000] font-bold">
+                <i class=" fa-solid fa-x"></i>
+            </div>
+            <div class="Nav">
+              <i class="fa-solid fa-phone-volume text-red-500" ></i>
+              <b>Missed Call</b>
+            </div>
+            <div class="Incomeing flex  gap-4">
+                <div class="image p-1 bg-[#d6d4d4] rounded-full w-fit">
+                    <img class=" w-20 h-20 rounded-full"  width=" 40px" src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="image">
+                </div>
+                <div class="text flex flex-col  ">
+                    <span>You Missed a Call from</span>
+                    <b>Frederick Floyd</b>
+                    <span class=" text-xs">22 hours ago</span>
+                </div>
+            </div>
+            <div class="btn-group flex  gap-5">
+
+            <button class=" p-2 bg-slate-300 hover:bg-slate-400 flex gap-2 items-center rounded-xl text-[#fff] font-bold w-40 text-center justify-center "><i class="fa-regular fa-comment "></i>Send massage</button>
+            <button class=" p-2 bg-green-600 hover:bg-green-700 flex gap-2 items-center rounded-xl text-[#fff] font-bold w-40 text-center justify-center "><i class="fa-solid fa-phone"></i>Call Back</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
